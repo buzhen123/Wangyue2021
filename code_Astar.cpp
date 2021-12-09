@@ -1,11 +1,13 @@
 #include<bits/stdc++.h>
-#include<windows.h>
 using namespace std;
+
 int a[1001][1001],x,y,n,m;
 int x_step[4]= {-1,0,1,0}, y_step[4]= {0,1,0,-1};
+
 int h(int a,int b) {
 	return abs(a-x)+abs(b-y);
 }
+
 struct node {
 	int x,y,val;
 	bool operator<(node a) const {
@@ -14,6 +16,7 @@ struct node {
 }
 block;
 priority_queue<node>q;
+
 void Astar() {
 	node st;
 	cin>>st.x>>st.y;
@@ -36,6 +39,7 @@ void Astar() {
 	}
 	printf("No Solution");
 }
+
 void read() {
 	cin>>n>>m;
 	for (int i=1;i<=n;++i)
@@ -43,11 +47,9 @@ void read() {
 		cin>>a[i][j];
 	cin>>x>>y;
 }
+
 int main() {
-	int t=GetTickCount();
 	read();
 	Astar();
-	int dt=GetTickCount()-t;
-	cout<<endl<<dt;
 	return 0;
 }
