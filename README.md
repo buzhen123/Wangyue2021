@@ -4,7 +4,8 @@
 本作品全部由本人独自完成，如有错误，敬请指正
 
 
-在学习算法和设计问题中，参考了以下网站
-1.oi-wiki.com
-2.stanforduniversity.com
-3.wikipedia.com
+在学习算法和设计问题中，参考了以下网站 
+
+1. oi-wiki.com 
+2. stanforduniversity.com 
+3. wikipedia.com
